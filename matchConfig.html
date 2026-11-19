@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Match Configuration</title>
+    <link rel="stylesheet" href="css/player.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>MATCH CONFIGURATION</h2>
+
+    <h3>TEAM A vs TEAM B</h3>
+
+    <form action="startMatch" method="post">
+
+        <label>Select Overs</label>
+
+        <select name="overs" required>
+            <option value="2">2 Overs</option>
+            <option value="5" selected>5 Overs</option>
+            <option value="15">15 Overs</option>
+        </select>
+
+        <label>Choose First Batting Team</label>
+
+        <select name="firstBattingTeam" required>
+            <option value="1">Team A</option>
+            <option value="2">Team B</option>
+        </select>
+
+        <button type="submit">START MATCH</button>
+
+    </form>
+
+    <a href="index.html">Back to Home</a>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

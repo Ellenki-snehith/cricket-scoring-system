@@ -1,0 +1,184 @@
+
+/* GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #101827;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #172438, #1c354b);
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 2px solid #38d996;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    color: #38d996;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.tagline {
+    margin-top: 8px;
+    color: #b5c8d8;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+/* MAIN CONTAINER */
+.container {
+    width: 88%;
+    max-width: 1050px;
+    margin: 55px auto;
+}
+
+/* WELCOME SECTION */
+.welcome {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.welcome h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.welcome p {
+    color: #aab9ca;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* SECTION TITLE */
+.section-title {
+    color: #38d996;
+    font-size: 17px;
+    letter-spacing: 3px;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+/* MENU GRID */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+/* MENU CARDS */
+.menu-card {
+    position: relative;
+    display: block;
+    padding: 28px;
+    min-height: 190px;
+
+    background: linear-gradient(145deg, #1e3049, #192a40);
+
+    border: 1px solid #30445d;
+    border-radius: 14px;
+
+    text-decoration: none;
+    color: white;
+
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+/* CARD HOVER */
+.menu-card:hover {
+    transform: translateY(-7px);
+    border-color: #38d996;
+    background: linear-gradient(145deg, #243e55, #1c354b);
+    box-shadow: 0 12px 30px rgba(56, 217, 150, 0.12);
+}
+
+/* ICON */
+.icon {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* CARD TITLE */
+.menu-card h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+    color: #38d996;
+}
+
+/* CARD DESCRIPTION */
+.menu-card p {
+    color: #b5c4d4;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* CARD LINK */
+.arrow {
+    display: inline-block;
+    margin-top: 18px;
+    color: #38d996;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* PLAY MATCH CARD */
+.play-card {
+    grid-column: span 2;
+    text-align: center;
+    background: linear-gradient(120deg, #123c35, #1e3049);
+    border: 1px solid #38d996;
+}
+
+.play-card h3 {
+    font-size: 25px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 65px;
+    border-top: 1px solid #293a50;
+    color: #8294a9;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 650px) {
+
+    .container {
+        width: 92%;
+        margin: 35px auto;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .welcome h1 {
+        font-size: 27px;
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+    .play-card {
+        grid-column: span 1;
+    }
+}
